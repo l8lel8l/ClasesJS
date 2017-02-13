@@ -2,23 +2,36 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>YaguarRuna</title>
-        <script>
-            alert("Alerta 1");
-        </script>
+        <title>YaguarRuna</title>   
+        <style>
+            h1{
+                color:red;
+                font-size: 2em;
+            }
+            #nombreDeLaPersona{
+                color:darkred;
+            }
+        </style>
     </head>
     <body>
-        <h1>Hola</h1>
-        mi nombre es <b>Esteban</b>
-        <br>
-        tengo 21 años.
-        <br>
-        <img src="logo.png">
+        <h1>¡HOLA!</h1>
+        <h2 id="nombreDeLaPersona">NOMBRE</h2>
+        <h1>TIENES</h1>
+        <h2>
+            <span id="edadDeLaPersona">
+                XX
+            </span>
+             años
+        </h2>
         <script>
-            alert("Alerta 2");
+            nombre = prompt("Danos tu nombre:");
+            edad   = prompt("Danos tu edad:");
+
+            etiquetaNombre = document.getElementById("nombreDeLaPersona");
+            etiquetaEdad   = document.getElementById("edadDeLaPersona");
+
+            etiquetaNombre.innerHTML = nombre;
+            etiquetaEdad.innerHTML   = edad;
         </script>
-    </body>
-        <script>
-            alert("Alerta 3");
-        </script>
+    </body> 
 </html>
